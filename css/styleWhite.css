@@ -16,13 +16,13 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(230, 230, 230);
   outline: none;
 }
 
-/* Submit button style */
+/* Button style */
 button {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(230, 230, 230);
   color: rgb(0, 0, 0);
   padding: 16px 20px;
   margin: 8px 0;
