@@ -4,11 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MathFunctionsProject</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <h2>-My first javascript project-</h2>
-    <script src="js/script.js"></script>
-</body>
+    <link id="stylesheetBase" rel="stylesheet" href="css/styleWhite.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Front end testing</title>
+  </head>
+  
+  <body>
+
+    <form name="studentForm">
+      <div class="userSignUp">
+        <h2>User sign in</h2>
+        <p>Please create an account before joining the "club".</p>
+        <hr><br>
+        <label for="firstName"><b>First name</b></label>
+        <input type="text" placeholder="First name" id="firstName" required>
+        
+        <label for="lastName"><b>Last name</b></label>
+        <input type="text" placeholder="Last name" id="lastName" required>
+
+        <button type="button" onclick="submitFunction()" >Create account</button>
+        <hr>
+
+<script>
+  function submitFunction(){
+    if(!document.getElementById("firstName").value || !document.getElementById("lastName").value){
+      alert("Input missing.");
+      return;
+    }
+    alert("First name: " + document.getElementById('firstName').value + "\nLast name: " + document.getElementById("lastName").value);
+  }
+</script>
+
+      </div>
+    </form>
+    
+  <button type="button" onclick="toggleStyleSheet()">Toggle theme</button>
+  <button type="button" onclick="alert(new Date())">Display date</button>
+  <button type="button" onclick="alert('https:/github.com/Sazails')">View my github</button>
+  <button type="button" onclick="window.open('https:/github.com/Sazails')">Visit my github</button>
+<hr>
+    </body>
 </html>
